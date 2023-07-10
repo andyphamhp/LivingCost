@@ -14,6 +14,7 @@
 		3FBBA5FF2A5BB749007891FC /* LivingCostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBA5FE2A5BB749007891FC /* LivingCostTests.swift */; };
 		3FBBA6092A5BB749007891FC /* LivingCostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBA6082A5BB749007891FC /* LivingCostUITests.swift */; };
 		3FBBA60B2A5BB749007891FC /* LivingCostUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBA60A2A5BB749007891FC /* LivingCostUITestsLaunchTests.swift */; };
+		3FBBA6182A5C26B1007891FC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBA6172A5C26B1007891FC /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3FBBA6042A5BB749007891FC /* LivingCostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivingCostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBBA6082A5BB749007891FC /* LivingCostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingCostUITests.swift; sourceTree = "<group>"; };
 		3FBBA60A2A5BB749007891FC /* LivingCostUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingCostUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FBBA6172A5C26B1007891FC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				3FBBA5ED2A5BB748007891FC /* LivingCostApp.swift */,
 				3FBBA5EF2A5BB748007891FC /* ContentView.swift */,
+				3FBBA6172A5C26B1007891FC /* DetailView.swift */,
 				3FBBA5F12A5BB749007891FC /* Assets.xcassets */,
 				3FBBA5F32A5BB749007891FC /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBBA5F02A5BB748007891FC /* ContentView.swift in Sources */,
+				3FBBA6182A5C26B1007891FC /* DetailView.swift in Sources */,
 				3FBBA5EE2A5BB748007891FC /* LivingCostApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +429,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +459,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

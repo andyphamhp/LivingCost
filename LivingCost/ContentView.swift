@@ -8,14 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    
+    struct Category: Identifiable {
+        
+        enum CatType: String, CaseIterable {
+            case electricity
+            case water
+            case setting
         }
-        .padding()
+        
+        let id = UUID()
+        let type: CatType
+    }
+    
+    private let categoryListEnum: [String] = {
+        let allCase = Category.CatType.allCases
+        return allCase.map(\.rawValue)
+    }()
+    
+    private let categoryList: [Category] = {
+        return Array<Category.CatType>([.electricity, .water]).map { type in
+            Category(type: type)
+        }
+    }()
+    
+    var body: some View {
+        NavigationView {
+            List(categoryListEnum, id: \.self) { category in
+                NavigationLink {
+                    DetailView(category: category)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .navigationTitle(category.capitalized)
+                } label: {
+                    Text(category.capitalized)
+                }
+            }
+            .navigationTitle("Main")
+        }
     }
 }
 
